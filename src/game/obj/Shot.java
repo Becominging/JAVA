@@ -4,7 +4,10 @@ import game.AsteroidsGame;
 import game.Obj;
 import java.awt.Rectangle;
 
-
+/**
+ *
+ * @author leonardo
+ */
 public class Shot extends Obj {
 
     private long startTime;
@@ -38,12 +41,15 @@ public class Shot extends Obj {
             game.addScore(AsteroidsGame.ASTEROID_SCORE_TABLE[hittedAsteroid.size]);
 
             // new large asteroid is created every time
-            // 9 small asteroids are destroyed
+            // 9 small asteroids are destroyed！！！！！！！！！！
             if (hittedAsteroid.size == 1) {
                 smallAsteroidHitCount++;
-                if ((smallAsteroidHitCount % 100) == 0) {
-                    game.createOneAsteroid();
+                if ((smallAsteroidHitCount % 9) == 0) {
+                    for (int i = 0; i < (smallAsteroidHitCount / 9) + 1; i++) {
+                        game.createOneAsteroid();
+                    }
                 }
+
             }
 
             hittedAsteroid.hit();
