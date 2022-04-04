@@ -5,10 +5,7 @@ import game.AsteroidsGame;
 import game.Obj;
 import java.awt.Rectangle;
 
-/**
- *
- * @author leonardo
- */
+
 public class Spark extends Obj {
     
     private long startTime;
