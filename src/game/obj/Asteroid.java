@@ -8,7 +8,7 @@ import java.awt.Polygon;
 
 /**
  *
- * @author leonardo
+ * @author Daniel Howes
  */
 public class Asteroid extends Obj {
     
