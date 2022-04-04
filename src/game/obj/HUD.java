@@ -11,10 +11,7 @@ import java.awt.Polygon;
 import java.awt.event.KeyEvent;
 import java.awt.geom.AffineTransform;
 
-/**
- *
- * @author leonardo
- */
+
 public class HUD extends Obj {
 
     private Font font = new Font("Arial", Font.PLAIN, 30);
