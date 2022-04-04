@@ -1,6 +1,5 @@
 package game.obj;
 
-
 import game.AsteroidsGame;
 import game.AsteroidsGame.State;
 import game.Obj;
@@ -10,9 +9,9 @@ import game.Obj;
  * @author leonardo
  */
 public class Initializer extends Obj {
-    
+
     private long startTime;
-    
+
     public Initializer(AsteroidsGame game) {
         super(game);
         startTime = System.currentTimeMillis();
@@ -20,9 +19,9 @@ public class Initializer extends Obj {
 
     @Override
     public void updateInitializing() {
-        if (System.currentTimeMillis() - startTime > 100) {
+        if (System.currentTimeMillis() - startTime > 1) {
             game.setState(State.TITLE);
         }
     }
-    
+
 }
