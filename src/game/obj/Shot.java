@@ -4,10 +4,7 @@ import game.AsteroidsGame;
 import game.Obj;
 import java.awt.Rectangle;
 
-/**
- *
- * @author leonardo
- */
+
 public class Shot extends Obj {
 
     private long startTime;
