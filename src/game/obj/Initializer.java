@@ -4,10 +4,7 @@ import game.AsteroidsGame;
 import game.AsteroidsGame.State;
 import game.Obj;
 
-/**
- *
- * @author leonardo
- */
+
 public class Initializer extends Obj {
 
     private long startTime;
