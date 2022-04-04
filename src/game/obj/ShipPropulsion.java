@@ -7,10 +7,7 @@ import java.awt.Graphics2D;
 import java.awt.Polygon;
 
 
-/**
- *
- * @author leonardo
- */
+/*Mingming Zhang java group*/
 public class ShipPropulsion extends Obj {
     
     private Ship ship;
@@ -25,9 +22,16 @@ public class ShipPropulsion extends Obj {
 
     private void setShape() {
         propulsionShape.addPoint(-25, 0);
-        propulsionShape.addPoint(-10, 3);
-        propulsionShape.addPoint(-10, -3);
+        propulsionShape.addPoint(-7, 3);
+        propulsionShape.addPoint(-7, -3);
         shape = propulsionShape;
+    }
+    
+    @Override
+    public void draw(Graphics2D g) {
+        if (ship.accelerating && show) {
+            super.draw(g);
+        }
     }
 
     @Override
@@ -37,14 +41,9 @@ public class ShipPropulsion extends Obj {
         angle = ship.angle;
         visible = ship.visible;
         show = !show;
-        propulsionShape.xpoints[0] = -25 + (int) (10 * Math.random());
+        propulsionShape.xpoints[0] = -25 + (int) (7 * Math.random());
     }
 
-    @Override
-    public void draw(Graphics2D g) {
-        if (ship.accelerating && show) {
-            super.draw(g);
-        }
-    }
+    
     
 }
