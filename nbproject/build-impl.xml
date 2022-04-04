@@ -27,7 +27,7 @@ It's has been divided into 11 sections.
         </condition>
     </fail>
     <target depends="test,jar,javadoc" description="Build and test whole project." name="default"/>
-    <!-- 
+    <!--                section 1
                 ======================
                 INITIALIZATION SECTION 
                 ======================
