@@ -8,10 +8,7 @@ import game.Obj;
 import java.awt.Polygon;
 import java.awt.event.KeyEvent;
 
-/**
- *
- * @author leonardo
- */
+
 public class Ship extends Obj {
     
     public double vx, vy;
@@ -38,7 +35,7 @@ public class Ship extends Obj {
     public void updatePlaying() {
         long currentTime = System.currentTimeMillis();
         
-        if (accelerating = Keyboard.keyDown[KeyEvent.VK_UP]) { // accelerating ?
+        if (accelerating = Keyboard.keyDown[KeyEvent.VK_UP]) { // accelerating 
             vx += 0.25 * Math.cos(angle);
             vy += 0.25 * Math.sin(angle);
         }
