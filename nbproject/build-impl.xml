@@ -2,21 +2,20 @@
 <!--
 *** GENERATED FROM project.xml - DO NOT EDIT  ***
 ***         EDIT ../build.xml INSTEAD         ***
+It's has been divided into 11 sections.
 
-For the purpose of easier reading the script
-is divided into following sections:
 
-  - initialization
-  - compilation
-  - jar
-  - execution
-  - debugging
-  - javadoc
-  - test compilation
-  - test execution
-  - test debugging
-  - applet
-  - cleanup
+  - section 1: initialization
+  - section 2: compilation
+  - section 3: jar
+  - section 4: execution
+  - section 5: debugging
+  - section 6: javadoc
+  - section 7: test compilation
+  - section 8: test execution
+  - section 9: test debugging
+  - section 10: applet
+  - section 11: cleanup
 
         -->
 <project xmlns:j2seproject1="http://www.netbeans.org/ns/j2se-project/1" xmlns:j2seproject3="http://www.netbeans.org/ns/j2se-project/3" xmlns:jaxrpc="http://www.netbeans.org/ns/j2se-project/jax-rpc" basedir=".." default="default" name="AsteroidsSurvival-impl">
