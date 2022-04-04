@@ -6,11 +6,8 @@ import game.AsteroidsGame.State;
 import game.Obj;
 import java.awt.Polygon;
 
-/**
- *
- * @author leonardo
- */
-public class Saucer extends Obj {
+
+public class Saucer extends Obj { //alien ship
     
     public Ship ship;
     // size 1=small, 2=large
