@@ -5,10 +5,7 @@ import game.AsteroidsGame;
 import game.Obj;
 import java.awt.geom.Ellipse2D;
 
-/**
- *
- * @author leonardo
- */
+
 public class SaucerShot extends Obj {
     
     private long startTime;
