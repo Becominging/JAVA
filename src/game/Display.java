@@ -13,10 +13,7 @@ import javax.swing.JFrame;
 import javax.swing.SwingUtilities;
 
 
-/**
- *
- * @author leonardo
- */
+
 public class Display extends Canvas {
     
     private Stroke stroke = new BasicStroke(2);
