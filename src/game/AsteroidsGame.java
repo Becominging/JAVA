@@ -16,10 +16,7 @@ import java.awt.geom.Area;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- *
- * @author leonardo
- */
+
 public class AsteroidsGame {
 
     public static final String TITLE = "Asteroids Survival";
@@ -35,7 +32,7 @@ public class AsteroidsGame {
     public static enum State { INITIALIZING, TITLE, PLAYING, HITTED, GAME_OVER }
     private State state = State.INITIALIZING;
     private Ship ship;
-    private int lives = 3;
+    private int lives = 3;//only three tries
     private int score;
     private int hiscore;
     
@@ -164,8 +161,7 @@ public class AsteroidsGame {
         }
     }
 
-    // TODO: provisory checkCollision() method that at least works, 
-    //       but needs to improve later ?
+  
     public Obj checkCollision(Obj o1, Class collidedObjType) {
         for (Obj o2 : objs) {
             if (o1 == o2 || !collidedObjType.isInstance(o2)
